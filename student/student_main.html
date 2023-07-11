@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생회관</title>
+    <link rel = "stylesheet" type = "text/css" href="../css/detail_style.css"/>
+    <link rel = "stylesheet" type = "text/css" href="../css/swiper.css"/>
+    <link rel = "stylesheet" type = "text/css" href="../css/menubar.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="page">
+    <header tabindex="0">
+      <div id="logo">
+        <img src="../library/images/logo.png" alt="Logo"></a>
+      </div> 
+        <h1 style="font-size : 40px; margin-left: 110px;">학생회관</h1>
+    </header>
+    <div id="nav-container">
+      <div class="bg"></div>
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="nav-content" tabindex="0" >
+        <ul>
+          <li><a href = "../WebContent/veiw/index.html">세종대학교</a></li>
+          <li><a href="../gunja/gunja_main.html">군자관</a></li>
+          <li><a href="../ai/ai_main.html">대양AI센터</a></li>
+          <li><a href="../library/library_main.html">학술정보원</a></li>
+          <li><a href="#">학생회관</a></li>
+        </ul>
+      </div>
+      </div>
+    <nav tabindex="0">
+        <ul>
+          <li><a style="font-weight : bold; " href = "#0">학생회관</a></li>
+          <li><a href = "student_food.html">푸드코트</a></li>
+          <li><a href = "student_gym.html">체력단련장</a></li>
+          <li><a href = "student_global.html">글로벌 라운지</a></li>
+          <li><a href = "student_Jeju.html">제주몰빵</a></li>
+          <li><a href = "student_lounge.html">세종 라운지</a></li>
+          <li><a href = "student_club.html">동아리방</a></li>
+        </ul>
+    </nav>
+    <!-- Swiper -->
+    <div class = "box main_box">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class = "swiper-slide">
+                학생회관 실물사진
+              <!-- <img src = "images/mainimg.jpg" weight = "100%" height = "100%"/> -->
+            </div>
+            <div class = "swiper-slide">
+                <div class = "floortxt">
+                  <h1> B2F</h1>
+                  <p>
+                    음악연습실/체력단련실/샤워실
+                  </p>
+                </div>
+                <!-- <img class="floorimg" src="images/B1F.jpg"/> -->
+              </div>
+            <div class = "swiper-slide">
+              <div class = "floortxt">
+                <h1> B1F</h1>
+                <p>
+                  푸드코트/대공연장/소공연장
+                </p>
+              </div>
+              <!-- <img class="floorimg" src="images/B1F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1> 1F </h1>
+                <p>
+                  파리바게트/분식점/편의점/잡(JOB)카페
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/2F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>2F</h1>
+                <p>
+                  글로벌 라운지/제주몰빵/실내 인공암벽/수업과/학적과
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/3F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+                <div class = "floortxt">
+                  <h1>3F</h1>
+                  <p>
+                    학생생활상담소/취업지원과
+                  </p>
+                </div>
+                <!-- <img class = "floorimg" src = "images/3F.jpg"/> -->
+              </div>
+              <div class="swiper-slide">
+                <div class = "floortxt">
+                  <h1>4F</h1>
+                  <p>
+                    총학생회실/단과대학학생회실/동아리연합회실/예비역협의회실/산하기구실
+                  </p>
+                </div>
+                <!-- <img class = "floorimg" src = "images/4F.jpg"/> -->
+              </div>
+              <div class="swiper-slide">
+                <div class = "floortxt">
+                  <h1>5F</h1>
+                  <p>
+                    동아리실
+                  </p>
+                </div>
+                <!-- <img class = "floorimg" src = "images/5F.jpg"/> -->
+              </div>
+              <div class="swiper-slide">
+                <div class = "floortxt">
+                  <h1>6F</h1>
+                  <p>
+                    동아리실/세종타임즈/학보사/세미나실/방송국
+                  </p>
+                </div>
+                <!-- <img class = "floorimg" src = "images/6F.jpg"/> -->
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+        
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop : true,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets : true,
+        },
+    });
+    </script>
+  </div>
+
+  <footer class="footer">
+      <ul> 
+        <li style="padding-left: 60px;">05006 서울특별시 광진구 능동로 209 (군자동) 세종대학교</li>
+        <li style="padding-left: 60px;">이메일 : uiforum2021@gmail.com</li>
+        <li style="padding-left: 60px;">전화: 070-4693-3627</li>
+      </ul>
+  </footer>
+</body>
+</html>

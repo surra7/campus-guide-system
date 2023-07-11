@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sejong-campus-guide</title>
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+</head>
+<body>
+<div class="main-wrap">
+    <!--        <header>-->
+    <!--            <div class="logo-wrap">-->
+    <!--                <div class="logo">-->
+    <!--                    <a href="#" onClick="top.location='javascript:location.reload()'">-->
+    <!--                        <img src="../image/logo.png">-->
+    <!--                    </a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </header>-->
+    <main>
+        <div class="main-content">
+            <div class="map">
+                <div class="map-background">
+                    <img src="../image/ground.jpg">
+                </div>
+
+                <div class="map-header">
+                    <div class="logo">
+                        <a href="#" onClick="top.location='javascript:location.reload()'">
+                            <img src="../image/logo.png">
+                        </a>
+                    </div>
+                    <div class="map-header-right">
+                        <div class="filter_area">
+                            <ul class="filter_list">
+                                <li class="filter_item cafe">
+                                    <button type="button">
+                                        <img src="../image/new_coffee.png">
+                                        <!--                                    <p>카페</p>-->
+                                    </button>
+                                </li>
+                                <li class="filter_item restaurant">
+                                    <button type="button">
+                                        <img src="../image/new_fork.png">
+                                        <!--                                    <p>학생 식당</p>-->
+                                    </button>
+                                </li>
+                                <li class="filter_item store">
+                                    <button type="button">
+                                        <img src="../image/new_grocery-store.png">
+                                        <!--                                    <p>편의점</p>-->
+                                    </button>
+                                </li>
+                                <li class="filter_item print">
+                                    <button type="button">
+                                        <img src="../image/new_printer.png">
+                                        <!--                                    <p>프린터</p>-->
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-group">
+                            <input id="searchBar" type="text" placeholder="예) 센107">
+                            <button name="search" class="btn btn-default" type="submit"><i class="fa fa-search"></i>
+                                <span class="input-group-btn">
+                                    <img src="../image/search.png">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="structures" width="1800" height="850">
+                    <div class="structure student">
+                        <a class="structure-img">
+                            <img width="200" height="176" src="../image/hakgwan.png">
+                        </a>
+                    </div>
+                    <div class="structure ai">
+                        <a class="structure-img">
+                            <img width="200" height="246" src="../image/innocen.png">
+                        </a>
+                    </div>
+                    <div class="structure gunja">
+                        <a class="structure-img">
+                            <img width="200" height="185" src="../image/Gunja.png">
+                        </a>
+                    </div>
+                    <div class="structure library">
+                        <a class="structure-img">
+                            <img width="162" height="200" src="../image/hakjeong.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pin-group">
+                    <div class="student pin cafe restaurant">
+                        <img src="../image/map_pin_small.png">
+                    </div>
+                    <div class="ai pin store cafe">
+                        <img src="../image/map_pin_small.png">
+                    </div>
+                    <div class="gunja pin restaurant store print">
+                        <img src="../image/map_pin_small.png">
+                    </div>
+                    <div class="library pin cafe print">
+                        <img src="../image/map_pin_small.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(document).ready(function () {
+        var pin_type = null;
+
+        //카페,식당,편의점,프린터 아이콘 클릭
+        $('.filter_item').on('click', function () {
+            pin_type = this.className.split(' ')[1];
+            var type = '.pin-group .' + pin_type;
+            $('.pin').css('visibility', 'hidden');
+            $(type).css('visibility', 'visible');
+        });
+        //검색 버튼 클릭
+        $("button[name='search']").on('click', function () {
+            var searchTerm = document.getElementById("searchBar").value;
+            var buildingName = String(searchTerm)[0];
+            $('.pin').css('visibility', 'hidden');
+            if(buildingName == '센') {
+                $('.pin-group .ai').css('visibility', 'visible');
+            }
+            else if(buildingName == '군') {
+                $('.pin-group .gunja').css('visibility', 'visible');
+            }
+            else if(buildingName == '학') {
+                $('.pin-group .student').css('visibility', 'visible');
+            }
+            else if(buildingName == '동') {
+                $('.pin-group .library').css('visibility', 'visible');
+            }
+        });
+        //건물 마우스 엔터
+        $('.structure a img').on('mouseenter', function () {
+            var sturctureName = '.' + $(this).parent().parent().attr('class').split(' ')[1];
+            $(sturctureName).css('transform', 'scale(1.2)');
+        });
+
+        //건물 마우스 리브
+        $('.structure a img').on('mouseleave', function () {
+            var sturctureName = '.' + $(this).parent().parent().attr('class').split(' ')[1];
+            $(sturctureName).css('transform', 'scale(1)');
+        });
+
+        //건물 홈페이지로 이동
+        $('.structure-img').on('click', function () {
+            var structureName = $(this).parent().attr('class').split(' ')[1];
+
+            if ($('.pin-group .' + structureName).css('visibility') == 'visible') {
+                location.href = '../../' + structureName + '/' + structureName + '_' + pin_type + '.html';
+            } else {
+                location.href = '../../' + structureName + '/' + structureName + '_main.html';
+
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학술정보원</title>
+    <link rel = "stylesheet" type = "text/css" href="../css/detail_style.css"/>
+    <link rel = "stylesheet" type = "text/css" href="../css/swiper.css"/>
+    <link rel = "stylesheet" type = "text/css" href="../css/menubar.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <div class="page">
+    <header tabindex="0">
+      <div id="logo">
+        <img src="../library/images/logo.png" alt="Logo"></a>
+      </div> 
+        <h1 style="font-size : 40px; margin-left: 110px;">학술정보원</h1>
+    </header>
+    <div id="nav-container">
+      <div class="bg"></div>
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="nav-content" tabindex="0" >
+        <ul>
+          <li><a href = "../WebContent/veiw/index.html">세종대학교</a></li>
+          <li><a href="../gunja/gunja_main.html">군자관</a></li>
+          <li><a href="../ai/ai_main.html">대양AI센터</a></li>
+          <li><a href="#">학술정보원</a></li>
+          <li><a href="../student/student_main.html">학생회관</a></li>
+        </ul>
+      </div>
+      </div>
+    <nav tabindex="0">
+        <ul>
+          <li><a style="font-weight : bold; " href = "#0">학술정보원</a></li>
+          <li><a href = "library_refer.html">자료실</a></li>
+          <li><a href = "library_read.html">자유열람실</a></li>
+          <li><a href = "library_print.html">프린터</a></li>
+          <li><a href = "library_study.html">스터디룸</a></li>
+          <li><a href = "library_cafe.html">사물함/카페</a></li>
+        </ul>
+    </nav>
+    <!-- Swiper -->
+    <div class = "box main_box">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class = "swiper-slide">
+              <img src = "images/mainimg.jpg" weight = "100%" height = "100%"/>
+            </div>
+            <div class = "swiper-slide">
+              <div class = "floortxt">
+                <h1> B1F</h1>
+                <p>
+                  A,B,C 자유열람실 / 카페드림 / 사물함         <br>
+                  출입구 > 학술정보원 계단
+                </p>
+              </div>
+              <img class="floorimg" src="images/B1F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1> 2F </h1>
+                <p>
+                  멀티미디어실/대출실/학술정보실/전산정보실
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/2F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>3F</h1>
+                <p>
+                  자유열람실/인터넷라운지/노트북전용석
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/3F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>4F</h1>
+                <p>
+                  교양영어테스트센터/전산실습실/독서당/창의토론라운지/스터디룸
+                </p>
+              </div>
+              <img class = "floorimg" src ="images/4F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>5F</h1>
+                <p>
+                  제 1 자료실
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/5F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>6F</h1>
+                <p>
+                  제 2 자료실
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/6F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>7F</h1>
+                <p>
+                  스터디룸/여학생휴게실/화상회의실/중앙서버룸
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/7F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>8F</h1>
+                <p>
+                  자유열람실/학술전산처장실
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/8F.jpg"/>
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>9F</h1>
+                <p>
+                  제 3 자료실
+                </p>
+              </div>
+              <img class = "floorimg" src = "images/9F.jpg"/>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+        
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop : true,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets : true,
+            // renderBullet: function (index, className) {
+            // return '<span class="' + className + '">' + (index + 1) + "</span>";
+            // },
+        },
+    });
+    </script>
+  </div>
+
+  <footer class = "footer">
+      <ul> 
+        <li style="padding-left: 60px;">05006 서울특별시 광진구 능동로 209 (군자동) 세종대학교</li>
+        <li style="padding-left: 60px;">이메일 : uiforum2021@gmail.com</li>
+        <li style="padding-left: 60px;">전화: 070-4693-3627</li>
+      </ul>
+  </footer>
+</body>
+</html>

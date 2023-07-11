@@ -1,0 +1,74 @@
+/*swiper.css*/
+/* @font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+body {
+background: #fff;
+font-family: 'ONE-Mobile-Regular', Mobile-Regular;
+font-size: 24px;
+color: #000;
+margin: 0;
+padding: 0;
+}
+
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 28px;
+background: #fff;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.box {
+position  : absolute;
+left : 20%;
+top : 25%;
+width : 60%; 
+height :75% ; 
+}
+.swiper-slide{
+position : relative;
+}
+
+.floortxt{
+z-index :1;
+text-align: left;
+margin-left : 10px;
+}
+
+.floorimg{
+position : absolute;
+opacity: 0.3;
+z-index:2;
+}
+h1{
+text-align: center;
+}
+

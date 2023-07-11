@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1, maximum-scale=1">
+    <title>자료실</title>
+    <link rel = "stylesheet" type = "text/css" href="../css/detail_style.css"/>
+    <!-- <link rel = "stylesheet" type = "text/css" href="../css/swiper.css"/> -->
+    <link rel = "stylesheet" type = "text/css" href="../css/menubar.css"/>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<style>
+    html,body{
+        position : relative;
+        height : 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .rswiper,
+      .readSwiper {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top:15%;
+      }
+
+      .swiper_slide {
+        font-size: 18px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 30px;
+      }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <header tabindex="0">
+              <div style="position: absolute; left:45%;" >
+                <a href="library_main.html"><img style="width:70px;" src="images/logo.png" alt="Logo"></a>
+              </div>
+            </header>
+            <div id="nav-container">
+              <div class="bg"></div>
+              <div class="button" tabindex="0">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </div>
+              <div id="nav-content" tabindex="0" >
+                <ul>
+                  <li><a href = "../WebContent/veiw/index.html">세종대학교</a></li>
+                  <li><a href="../gunja/gunja_main.html">군자관</a></li>
+                  <li><a href="../ai/ai_main.html">대양AI센터</a></li>
+                  <li><a href="#">학술정보원</a></li>
+                  <li><a href="../student/student_main.html">학생회관</a></li>
+                </ul>
+              </div>
+              </div>
+            <nav tabindex="0" >
+                <ul>
+                    <li><a href = "library_main.html">학술정보원</a></li>
+                    <li><a style="font-weight : bold; " href = "#">자료실</a></li>
+                    <li><a href = "library_read.html">자유열람실</a></li>
+                    <li><a href = "library_print.html">프린터</a></li>
+                    <li><a href = "library_study.html">스터디룸</a></li>
+                    <li><a href = "library_cafe.html">카페</a></li>
+                </ul>
+            </nav>
+            <div class="rswiper readSwiper" >
+                <div class="swiper_wrapper" >
+                  <div class="swiper_slide">
+                   <!-- width: 100%; text-align:left; overflow-x :hidden"> -->
+                   <h5>제1자료실 이용안내</h5>
+                    
+                   <p>이용안내<br>
+                   제1자료실은 학술정보원 5층에 위치하고 있으며, 총류, 철학, 종교, 사회과학, 언어학, 순수과학, 응용과학, 예술분야 및 과제도서 등 장서 200,000 여권을 소장하고 있습니다. 전문사서가 배치되어 위와 같은 주제분야와 관련된 각종 서비스를 실시함으로써 학내 이용자들의 학술연구와 교육에 보다 실질적이고 수준 높은 도움을 제공하고자 합니다.<br><br></p>
+                   
+                   <p>서비스 대상 / 내용 및 사서 소개<br></p>
+       
+                   <table border="1">
+                       <th>담당사서</th>
+                       <th>전화번호</th>
+                       <th>E-Mail</th>
+                       <th>서비스내용</th>
+                       <th>서비스대상</th>
+                       <tr><!-- 첫번째 줄 시작 -->
+                       <td>김진</td>
+                       <td>02-3408-3865</td>
+                       <td>genie@sejong.ac.kr</td>
+                       <td>자료검색 및 이용안내 <br> 온라인DB 이용안내</td>
+                       <td>000~700번대 <br> (총류~예술)</td>
+                       </tr><!-- 첫번째 줄 끝 -->
+                   </table><br><br>
+                   
+                   <p> 시설현황<br></p>
+                   <table border="1">
+                       <th>열람테이블 수</th>
+                       <th>열람좌석 수</th>
+                       <th>검색PC</th>
+                       <th>복사기</th>
+                       <tr><!-- 첫번째 줄 시작 -->
+                       <td>6인석59개/1인석18개</td>
+                       <td>390석</td>
+                       <td>8대/국회도서관검색용 1대/스캐너1대</td>
+                       <td>2대</td>
+                       </tr><!-- 첫번째 줄 끝 -->
+                   </table><br><br><br><br></p>
+               
+                   <h5>제2자료실 이용안내</h5>
+                   <p>
+                   이용안내<br>
+                   제2자료실은 학술정보원 6층에 위치하고 있으며, 문학, 역사자료, LC자료, 학위논문, 기탁자료(OECD, ADB, IOC), 지도자료 등 장서 300,000 여권을 소장하고 있습니다. 주제전문사서가 배치되어 위와 같은 주제분야와 관련된 각종 서비스를 실시함으로써 학내 이용자들의 학술연구와 교육에 보다 실질적이고 수준 높은 도움을 제공하고자 합니다.<br><br>
+                   
+                   서비스 대상 / 내용 및 사서 소개<br></p>
+       
+                   <table border="1">
+                       <th>담당사서</th>
+                       <th>전화번호</th>
+                       <th>E-Mail</th>
+                       <th>서비스내용</th>
+                       <th>서비스대상</th>
+                       <tr><!-- 첫번째 줄 시작 -->
+                       <td>이정숙</td>
+                       <td>02-3408-3866</td>
+                       <td>leejs@sejong.ac.kr</td>
+                       <td>자료검색 및 이용안내 <br> 온라인DB 이용안내</td>
+                       <td>문학, 역사/학위논문/ <br> LC자료 및 기탁자료 (ADB,OECD,IOC)</td>
+                       </tr><!-- 첫번째 줄 끝 -->
+                   </table><br><br>
+                   
+                   <p>시설현황<br></p>
+                   <table border="1">
+                       <th>열람테이블 수</th>
+                       <th>열람좌석 수</th>
+                       <th>검색PC</th>
+                       <th>복사기</th>
+                       <tr><!-- 첫번째 줄 시작 -->
+                       <td>6인석57개/1인석18개</td>
+                       <td>378석</td>
+                       <td>4대/국회도서관검색용 1대</td>
+                       <td>1대</td>
+                       </tr><!-- 첫번째 줄 끝 -->
+                   </table><br><br><br><br></p>
+                   </p>
+                   <h5>제3자료실 이용안내</h5>
+                   <p>
+                   이용안내<br>
+                   제3자료실은 국내외 학술/교양잡지, 학회지, 신문, 사보, 기증지 등 50,000 여종을 소장하고 있습니다. 최신 연속간행물은 신착자료서가에 국내, 국외 구분하여 연속간행물명의 가나다순과 알파벳순으로 배열되어 있으며, 과년도 연속간행물은 제본하여 제본서가에 청구기호순으로 배열되어 있습니다.<br><br>
+                   
+                   서비스 대상 / 내용 및 사서 소개<br></p>
+       
+                   <table border="1">
+                       <th>담당사서</th>
+                       <th>전화번호</th>
+                       <th>E-Mail</th>
+                       <th>서비스내용</th>
+                       <th>서비스대상</th>
+                       <tr><!-- 첫번째 줄 시작 -->
+                       <td>정홍식</td>
+                       <td>02-3408-3869</td>
+                       <td>jeonghs@sejong.ac.kr</td>
+                       <td>자료검색 및 이용안내 <br> 온라인DB 이용안내</td>
+                       <td>국내외학술지/ <br> 연속간행물 검색 및 이용안내</td>
+                       </tr><!-- 첫번째 줄 끝 -->
+                   </table><br><br>
+                   
+                   <p>시설현황<br></p>
+                   <table border="1">
+                       <th>열람테이블 수</th>
+                       <th>열람좌석 수</th>
+                       <th>검색PC</th>
+                       <th>복사기</th>
+                       <tr><!-- 첫번째 줄 시작 -->
+                       <td>28개</td>
+                       <td>134석</td>
+                       <td>6대/국회도서관검색용 1대/스캐너3대</td>
+                       <td>1대</td>
+                       </tr><!-- 첫번째 줄 끝 -->
+                   </table><br><br><br><br></p>
+                   </p>
+                   <h5>보존서고 이용안내</h5>
+                   <p>
+                   설명<br>
+                   각 열람실별 소장자료에 대한 체계적인 장서관리 및 준귀중본 자료의 적절한 보존을 위해 10층 기증문고, 지하2층 보존서고를 폐가제로 운영하고 있습니다. 폐가제로 운영되는 보존서고의 자료는 직접 서고를 들어가서 자료이용 및 열람, 대출할 수 없고 신청을 하면 사서가 해당도서를 찾아다 드립니다.<br><br>
+       
+                   이용방법<br>
+                   - 자료 검색결과 소장위치가 보존서고/기증문고 등 (9층문의)로 되어있는 자료의 경우<br>
+                   - 청구기호를 미니프린터로 출력하여 9층 데스크로 직접 제출<br>
+       
+                   <img style="width: 1400px; padding: 5px 20px" src="images\bg_archive.gif"> <br><br><br>
+                   </p>
+                   <h5>유의사항</h5>
+                   <p>                    
+                   - 대출 및 반납은 2층 대출실에서만 가능합니다.<br>
+                   - 서가에서 뽑아낸 책은 반납대 및 북트럭에 놓으시기 바랍니다.<br>
+                   - 음식물 반입을 금하며, 휴대폰은 진동으로 해주시기 바랍니다.<br>
+                   - 자료 검색이 끝나면 다음 이용자를 위하여 검색 초기화면으로 돌려주시기 바랍니다.<br>
+                   - 열람실내 통화 및 담화로 인해 다른 이용자에게 불편을 끼치는 일이 없도록 정숙 유지에 적극적으로 협조 바랍니다.<br>
+                   </p>
+                 </div>
+
+                </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+              <!-- Swiper JS -->
+              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          
+              <!-- Initialize Swiper -->
+              <script>
+                var readswiper = new Swiper(".readSwiper", {
+                  direction: "vertical",
+                  slidesPerView: "auto",
+                  freeMode: true,
+                  scrollbar: {
+                    el: ".swiper-scrollbar",
+                  },
+                  mousewheelControl: true,
+                });
+              </script>
+        </div>
+    </div>
+   
+</body>
+</html>
