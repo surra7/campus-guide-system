@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대양AI센터</title>
+    <link rel = "stylesheet" type = "text/css" href="../css/detail_style.css"/>
+    <link rel = "stylesheet" type = "text/css" href="../css/swiper.css"/>
+    <link rel = "stylesheet" type = "text/css" href="../css/menubar.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <div class="page">
+    <header tabindex="0">
+      <div id="logo">
+        <img src="../library/images/logo.png" alt="Logo"></a>
+      </div> 
+        <h1 style="font-size : 40px; margin-left: 110px;">대양AI센터</h1>
+    </header>
+    <div id="nav-container">
+      <div class="bg"></div>
+      <div class="button" tabindex="0">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div id="nav-content" tabindex="0" >
+        <ul>
+          <li><a href = "../WebContent/veiw/index.html">세종대학교</a></li>
+          <li><a href="../gunja/gunja_main.html">군자관</a></li>
+          <li><a href="#">대양AI센터</a></li>
+          <li><a href="../library/library_main.html">학술정보원</a></li>
+          <li><a href="../student/student_main.html">학생회관</a></li>
+        </ul>
+      </div>
+      </div>
+    <nav tabindex="0">
+        <ul>
+          <li><a style="font-weight : bold; " href = "#0">대양AI센터</a></li>
+          <li><a href = "ai_base.html">주차장</a></li>
+          <li><a href = "ai_class.html">강의실</a></li>
+          <li><a href = "ai_collab.html">콜라보랩</a></li>
+          <li><a href = "ai_SCIA.html">SCIA</a></li>
+          <li><a href = "ai_job.html">창업지원센터</a></li>
+          <li><a href = "ai_science.html">실험실/연구실</a></li>
+          <li><a href = "ai_subject.html">과실</a></li>
+          <li><a href = "ai_other.html">학교 외 이용시설</a></li>
+        </ul>
+    </nav>
+    <!-- Swiper -->
+    <div class = "box main_box">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class = "swiper-slide">
+                대양AI센터 실물사진
+              <!-- <img src = "images/mainimg.jpg" weight = "100%" height = "100%"/> -->
+            </div>
+            <div class = "swiper-slide">
+              <div class = "floortxt">
+                <h1> B3F-B5F</h1>
+                <p>
+                  주차장
+                </p>
+              </div>
+              <!-- <img class="floorimg" src="images/B1F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1> B1F-B2F </h1>
+                <p>
+                  강의실, SCIA 실습실
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/2F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>1F</h1>
+                <p>
+                  병원, 약국, 투썸플레이스
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/3F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>2F</h1>
+                <p>
+                  병원/레스토랑
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src ="images/4F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>3F</h1>
+                <p>
+                  SCIA사무실, 교무실, 창업지원센터
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/5F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>4F-8F</h1>
+                <p>
+                  실험실 / 연구실
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/6F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>9F-11F</h1>
+                <p>
+                  대양AI게스트하우스 프론트데스크 / 비즈니스센터
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/7F.jpg"/> -->
+            </div>
+            <div class="swiper-slide">
+              <div class = "floortxt">
+                <h1>12F</h1>
+                <p>
+                  대양AI홀 / AI컨퍼런스1~3룸
+                </p>
+              </div>
+              <!-- <img class = "floorimg" src = "images/8F.jpg"/> -->
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+        
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop : true,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets : true,
+            // renderBullet: function (index, className) {
+            // return '<span class="' + className + '">' + (index + 1) + "</span>";
+            // },
+        },
+    });
+    </script>
+  </div>
+
+  <footer class= "footer">
+      <ul> 
+        <li style="padding-left: 60px;">05006 서울특별시 광진구 능동로 209 (군자동) 세종대학교</li>
+        <li style="padding-left: 60px;">이메일 : uiforum2021@gmail.com</li>
+        <li style="padding-left: 60px;">전화: 070-4693-3627</li>
+      </ul>
+  </footer>
+</body>
+</html>
